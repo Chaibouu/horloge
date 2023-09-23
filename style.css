@@ -3,3 +3,42 @@
     margin: 0;
     padding: 0;
 }
+body{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+.horloge{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: rgba(2, 2, 2, 0.038);
+    border-radius:100%;
+    box-shadow: 45px 45px 45px -25px rgba(0,0,0,0.15);
+    border: 2px solid white;
+}
+.cadre{
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background-color: antiquewhite;
+    border-radius:100%;
+    border: 2px solid white;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    /* box-shadow: 7px 7px 22px #152b4a66; */
+
+}
+.cadre span{
+    position: absolute;
+    inset: 15px;
+    text-align: center;
+    color: white;
+    font-size: 38px;
+    transform: rotate(calc(30deg * var(--i)));
+}
