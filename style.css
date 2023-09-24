@@ -3,11 +3,13 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     display: flex;
     justify-content:center;
     align-items:center;
     min-height:100vh;
+    margin: var(--i);
 }
 .horloge{
     position: relative;
@@ -41,4 +43,84 @@ body{
     color: white;
     font-size: 38px;
     transform: rotate(calc(30deg * var(--i)));
+}
+span strong {
+    display: inline-block;
+    transform: rotate(calc(-30deg * var(--i)));
+}
+
+.carde .circle{
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(0,0,0,0.75);
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.carde .circle i{
+    position: absolute;
+    width: 6px;
+    height: 50px;
+    background-color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.un{
+    --i : 1;
+}
+.deux{
+    --i: 2;
+}
+.trois{
+    --i : 3;
+}
+.quatre{
+    --i: 4;
+}
+.cinq{
+    --i : 5;
+}
+.six{
+    --i: 6;
+}
+.sept{
+    --i : 7;
+}
+.huit{
+    --i: 8;
+}
+.neuf{
+    --i : 9;
+}
+.dix{
+    --i: 10;
+}
+.onze{
+    --i : 11;
+}
+.douze{
+    --i: 0;
+}
+.seconde{
+    --clr:#04fc43;
+}
+.minute{
+    --clr:#fee800;
+}
+.heure{
+    --clr:#ff2972;
 }
