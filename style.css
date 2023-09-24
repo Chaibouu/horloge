@@ -37,6 +37,16 @@ body{
     /* box-shadow: 7px 7px 22px #152b4a66; */
 
 }
+.cadre::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color:#e91e63;
+    z-index: 100000;
+    box-shadow: 0 0 0 1px #e91e63, 0 0 0 2px #f5f0f0, 0 0 5px 5px rgba(0,0,0,0.15);
+}
 .cadre span{
     position: absolute;
     inset: 15px;
@@ -50,24 +60,53 @@ span strong {
     transform: rotate(calc(-30deg * var(--i)));
 }
 
-.carde .circle{
+.cadre .circle{
     position: absolute;
     width: 280px;
     height: 280px;
-    border: 3px solid rgba(245, 244, 244, 0.75);
+    border: 3px solid rgba(0, 0, 0.75);
     border-radius: 50%;
     display: flex;
     justify-content:center;
     align-items:flex-start;
-    z-index: 100;
-
+    z-index: 10;
 }
-.carde .circle i{
+.cadre .circle::before{
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: var(--clr);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+}
+.cadre .circle i{
     position: absolute;
     width: 6px;
     height: 50%;
-    background-color: white;
+    background-color: var(--clr);
+    opacity: 0.75;
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+}
+.cadre .circle#seconde i{
+    width: 2px;
+ 
+}
+.cadre .circle#minute i{
+    width: 4px;
+}
 
+.cadre .circle#minute {
+    width: 230px;
+    height: 230px;
+}
+.cadre .circle#heure {
+    width: 180px;
+    height: 180px;
 }
 
 
