@@ -10,6 +10,7 @@ body{
     align-items:center;
     min-height:100vh;
     margin: var(--i);
+    background-color: black;
 }
 .horloge{
     position: relative;
@@ -18,7 +19,7 @@ body{
     display: flex;
     justify-content:center;
     align-items:center;
-    background-color: rgba(2, 2, 2, 0.038);
+    background-color: rgba(6, 23, 75, 0.212);
     border-radius:100%;
     box-shadow: 45px 45px 45px -25px rgba(0,0,0,0.15);
     border: 2px solid white;
@@ -27,7 +28,7 @@ body{
     position: absolute;
     width: 420px;
     height: 420px;
-    background-color: antiquewhite;
+    background-color: rgb(6, 23, 75);
     border-radius:100%;
     border: 2px solid white;
     display: flex;
@@ -53,17 +54,18 @@ span strong {
     position: absolute;
     width: 280px;
     height: 280px;
-    border: 1px solid rgba(0,0,0,0.75);
+    border: 3px solid rgba(245, 244, 244, 0.75);
     border-radius: 50%;
     display: flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
+    z-index: 100;
 
 }
 .carde .circle i{
     position: absolute;
     width: 6px;
-    height: 50px;
+    height: 50%;
     background-color: white;
 
 }
