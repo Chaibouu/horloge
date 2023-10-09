@@ -11,11 +11,12 @@ body{
     min-height:100vh;
     margin: var(--i);
     background-color: rgb(241, 237, 237);
+    width: 100vw;
 }
 .horloge{
     position: relative;
-    width: 450px;
-    height: 450px;
+    width: 430px;
+    height: 430px;
     display: flex;
     justify-content:center;
     align-items:center;
@@ -112,7 +113,59 @@ span strong {
     height: 180px;
 }
 
-
+@media screen and (max-width: 425px) {
+    .horloge{
+        width: 400px;
+        height: 400px;
+    }
+    .cadre{
+        width: 390px;
+        height: 390px;
+    
+    }
+    .cadre .circle#minute {
+        width: 220px;
+        height: 220px;
+    }
+    .cadre .circle#heure {
+        width: 180px;
+        height: 180px;
+    }
+    .cadre .circle{
+        width: 260px;
+        height: 260px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .horloge{
+        width: 310px;
+        height: 310px;
+    }
+    .cadre{
+        width: 300px;
+        height: 300px;
+    
+    }
+    .cadre span{
+        font-size: 25px;
+    }
+    .CodeLoccol{
+        font-size:40px;
+        color: rgba(128, 128, 128, 0.657);
+    }
+    .cadre .circle#minute {
+        width: 170px;
+        height: 170px;
+    }
+    .cadre .circle#heure {
+        width: 140px;
+        height: 140px;
+    }
+    .cadre .circle{
+        width: 240px;
+        height: 200px;
+    }
+}
 
 
 
