@@ -19,10 +19,10 @@ body{
     display: flex;
     justify-content:center;
     align-items:center;
-    background-color: rgba(6, 23, 75, 0.212);
+    background-color: rgba(47, 47, 49, 0.279);
     border-radius:100%;
     box-shadow: 45px 45px 45px -25px rgba(0,0,0,0.15);
-    border: 2px solid white;
+    border: 2px solid rgb(138, 136, 136);
 }
 .CodeLoccol{
     font-size:50px;
@@ -34,7 +34,7 @@ body{
     height: 420px;
     background-color: rgb(6, 23, 75);
     border-radius:100%;
-    border: 2px solid white;
+    border: 2px solid rgb(150, 146, 146);
     display: flex;
     justify-content:center;
     align-items:center;
