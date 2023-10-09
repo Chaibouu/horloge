@@ -10,7 +10,7 @@ body{
     align-items:center;
     min-height:100vh;
     margin: var(--i);
-    background-color: black;
+    background-color: rgb(241, 237, 237);
 }
 .horloge{
     position: relative;
